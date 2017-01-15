@@ -71,8 +71,9 @@ The app must be deployed somewhere (*heroku is the simplest option*) so we can p
 - [x] Build an API
 - [x] Return list elements from own API
 - [x] Return requested element from own API
-- [ ] Allow create new element on own API
-- [ ] Allow update element on own API
-- [ ] Allow remove element on own API
+- [x] Allow create new element on own API
+- [x] Allow update element on own API
+- [x] Allow remove element on own API
+- [x] Validate title and content are required
 - [x] Create API Heroku app
 - [x] Deploy API to Heroku :link: https://ff-challenge-rails-api.herokuapp.com
