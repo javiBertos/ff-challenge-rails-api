@@ -1,24 +1,78 @@
-# README
+# The FinanceFox Challenge
+Uses an API that operates over a single resource.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Would be great if you can implement your own API based on the specifications you can find below (*feel free to do it in python, node, ruby*).
 
-Things you may want to cover:
+The app must be deployed somewhere (*heroku is the simplest option*) so we can play with it easily.
 
-* Ruby version
+### Extra points:
+- Tests
 
-* System dependencies
+## API USAGE DOCUMENT
+- Resource: posts
+- Content-Type: application/json
+- Required fields: title and content.
+- Sample JSON body:
+```
+{
+  "post": {
+    "title": "Madrid",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et ultricies ante.",
+    "lat": "40.41678",
+    "long": "-3.70379",
+    "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
+  }
+}
+```
 
-* Configuration
+## API Requests
+### list
+```
+  endpoint: /posts
+  method: GET
+  body : not needed
+  response code: 200
+```
 
-* Database creation
+### show
+```
+  endpoint: /posts/:id
+  method: GET
+  body : not needed
+  response code: 200
+```
 
-* Database initialization
+### create
+```
+  endpoint: /posts
+  method: Post
+  body : json
+  response code: 201
+```
 
-* How to run the test suite
+### update
+```
+  endpoint: /posts/:id
+  method: PUT
+  body : json
+  response code: 204
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### remove
+```
+  endpoint: /posts/:id
+  method: DELETE
+  body : not needed
+  response code: 204
+```
 
-* Deployment instructions
-
-* ...
+# Tasks
+- [x] Create github repo
+- [x] Build an API
+- [x] Return list elements from own API
+- [x] Return requested element from own API
+- [ ] Allow create new element on own API
+- [ ] Allow update element on own API
+- [ ] Allow remove element on own API
+- [x] Create API Heroku app
+- [x] Deploy API to Heroku :link: https://ff-challenge-rails-api.herokuapp.com
