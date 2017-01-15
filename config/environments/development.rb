@@ -46,5 +46,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # show errors as html
-  config.debug_exception_response_format = :default
+  # config.debug_exception_response_format = :default
 end
